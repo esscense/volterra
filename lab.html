@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOLTERRA // Volterra Lab</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="top-banner">
+      <div class="top-banner__inner">
+        <span class="dot dot--pulse"></span>
+        <span>GLOBAL RELEASE // VOLTERRA X WNBA &amp; F1 SPEED SERIES NOW LIVE — COMPLIMENTARY WORLDWIDE EXPRESS SHIPPING</span>
+      </div>
+      <div class="top-banner__meta">ENG_SPEC: V4.18</div>
+    </div>
+
+    <div class="header-main">
+      <div class="brand-group">
+        <a class="brand" href="#">
+          <img class="brand__logo" alt="VOLTERRA Brand Logo" src="https://lh3.googleusercontent.com/aida/AEtjO1VIN3rPA1xVodkWcZBgzGqXXe_RcA6kUp1zK5IvXTGgKv7b9mxUpoocX6okNmCgNiwHRs2uXPsesjHcTjkqWfZN1W0CmqsxSRQOiE6qNFxkHcW6I8_-wxk6LS0AHjond8GiGXLTEME4liWVdspV5jeoCq4MuiW8ISibHGfF_g1ky4i6IKldoYjn_3jexslSN5UlzP8yXJC_VDP7HVaOGWj87s8ZdyOWJQenA2u-itSwCg">
+          <span class="brand__name">VOLTERRA</span>
+        </a>
+        <span class="lab-badge">LAB 01</span>
+      </div>
+
+      <nav class="main-nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="catalog.html">Catalog</a>
+        <a class="nav-link" href="collabs.html">Limited &amp; Collabs</a>
+        <a class="nav-link is-active" href="/">Volterra Lab</a>
+        <a class="nav-link" href="about.html">About &amp; Team</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="search-btn" type="button">
+          <span class="material-symbols-outlined">search</span>
+          <span>Search footwear</span>
+          <kbd class="search-btn__kbd">⌘K</kbd>
+        </button>
+
+        <div class="header-actions__group">
+          <button class="currency-btn" type="button">
+            <span>USD / $</span>
+            <span class="material-symbols-outlined">expand_more</span>
+          </button>
+
+          <a class="icon-btn" href="#" aria-label="Favorites">
+            <span class="material-symbols-outlined">favorite</span>
+            <span class="icon-btn__badge icon-btn__badge--favorites">02</span>
+          </a>
+          <a class="icon-btn" href="#" aria-label="Cart">
+            <span class="material-symbols-outlined">shopping_bag</span>
+            <span class="icon-btn__badge icon-btn__badge--cart">01</span>
+          </a>
+
+          <div class="avatar-ring">
+            <img alt="Profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANhOHYHMQWvZ2pCWI5Zmcs-Bqv-QQoHvkfrwRSwJ8bwXHbOxOcfrTUJ6gRPXi1NJ8dRbF05geWT3NDh87GOPHBSDEB2aYiCfg7YzHNsRi9PAWDKczzbffzAfNLcHH_veob687xrbVM2M20Wi9fDQ59PLcklxdx1p-s3_muWQk7CM_7M2zh7s-ZJBGCD2Njf44hkbTF7nopySFgWBRg5Jie6RTTq_oVnlSq4A3ngRxc">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= LAB HERO ================= -->
+    <section class="lab-hero">
+      <div class="lab-header">
+        <div class="lab-header__text">
+          <div class="lab-eyebrow">
+            <span class="dot dot--ping" style="background:var(--primary);width:0.5rem;height:0.5rem;"></span>
+            <span>Bespoke Engineering Division // Lab ID: 0984-TK</span>
+          </div>
+          <h1 class="lab-title">Volterra Lab // Bespoke Kinetic Customizer</h1>
+          <p class="lab-desc">
+            Engineer your unique 1-of-1 silhouette. Tailor every millimeter from the carbon chassis to the upper micro-mesh with real-time stress testing analytics.
+          </p>
+        </div>
+
+        <!-- Live benchmark telemetry summary -->
+        <div class="telemetry-summary">
+          <div class="telemetry-summary__item">
+            <span class="telemetry-summary__label">Platform Weight</span>
+            <span class="telemetry-summary__value" id="telemetry-weight">184.2 g</span>
+          </div>
+          <span class="telemetry-summary__divider"></span>
+          <div class="telemetry-summary__item">
+            <span class="telemetry-summary__label">Propulsion Index</span>
+            <span class="telemetry-summary__value telemetry-summary__value--primary" id="telemetry-propulsion">98.4 %</span>
+          </div>
+          <span class="telemetry-summary__divider"></span>
+          <div class="telemetry-summary__item">
+            <span class="telemetry-summary__label">Status</span>
+            <span class="telemetry-summary__value telemetry-summary__value--accent">Calibrating</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- WORKBENCH -->
+      <div class="workbench">
+        <!-- Left: Canvas + metrics -->
+        <div class="workbench__main">
+          <div class="sneaker-canvas">
+            <div class="sneaker-canvas__grid"></div>
+
+            <svg class="sneaker-canvas__rings" preserveAspectRatio="none" viewBox="0 0 800 500">
+              <line stroke="currentColor" stroke-dasharray="4 4" stroke-width="1" x1="50" x2="750" y1="250" y2="250"></line>
+              <line stroke="currentColor" stroke-dasharray="4 4" stroke-width="1" x1="400" x2="400" y1="40" y2="460"></line>
+              <circle cx="400" cy="250" fill="none" r="160" stroke="currentColor" stroke-dasharray="2 4" stroke-width="1"></circle>
+            </svg>
+
+            <div class="sneaker-canvas__img-wrap">
+              <img class="sneaker-canvas__img" id="customizer-hero-image" alt="Bespoke Prototype Render" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGeoCBR1jHK6HQqblt_d3pOHqFCHz8kc3pKyJEkvNlyrB-CtXKivOh7RuOMzbGi19F_ycwQTMgtc8yTSrQCmDj9Kf3TEdhxDCMSUwNyb8ryYxvirpXrSQlmAdcCfndmq5KnqQXA9NWAX8gxKWcTegrZrUQAN4fyV0vu_z_1RQxI4OPLpbaYbvFjBHN0rqmS9f5ryxPxjSqVQzCL57BxSSACrl9npEvnLDkwrPCz5Wy">
+            </div>
+
+            <!-- Hotspot 1 -->
+            <div class="hotspot" style="top:28%; left:45%;">
+              <button class="hotspot__btn" aria-label="Upper Vamp" type="button">
+                <span class="hotspot__dot" style="background:var(--primary-container);"></span>
+                <span class="hotspot__ring" style="color:rgba(0,71,255,0.4);"></span>
+              </button>
+              <div class="hotspot__tooltip hotspot__tooltip--right">
+                <span class="hotspot__tooltip-title">[01 UPPER VAMP]</span>
+                <span class="hotspot__tooltip-desc">Aero-Knit Micro-Mesh // Zero Tensile Friction</span>
+              </div>
+            </div>
+
+            <!-- Hotspot 2 -->
+            <div class="hotspot" style="bottom:30%; left:34%;">
+              <button class="hotspot__btn" aria-label="Carbon Plate" type="button">
+                <span class="hotspot__dot" style="background:var(--secondary-container);"></span>
+                <span class="hotspot__ring" style="color:rgba(221,47,31,0.4);"></span>
+              </button>
+              <div class="hotspot__tooltip hotspot__tooltip--left">
+                <span class="hotspot__tooltip-title" style="color:var(--secondary-container);">[02 CARBON PLATE]</span>
+                <span class="hotspot__tooltip-desc">Torsional Rigid Shank // 100% Recycled Carbon</span>
+              </div>
+            </div>
+
+            <!-- Hotspot 3 -->
+            <div class="hotspot" style="bottom:24%; right:32%;">
+              <button class="hotspot__btn" aria-label="Nitro Cushion" type="button">
+                <span class="hotspot__dot" style="background:var(--tertiary-container);"></span>
+              </button>
+              <div class="hotspot__tooltip hotspot__tooltip--left">
+                <span class="hotspot__tooltip-title">[03 NITRO CUSHION]</span>
+                <span class="hotspot__tooltip-desc">Supercritical Nitrogen-Infused Cell Matrix</span>
+              </div>
+            </div>
+
+            <!-- Hotspot 4 -->
+            <div class="hotspot" style="bottom:16%; left:62%;">
+              <button class="hotspot__btn" aria-label="Outsole Tread" type="button">
+                <span class="hotspot__dot" style="background:var(--primary-container);"></span>
+              </button>
+              <div class="hotspot__tooltip hotspot__tooltip--left">
+                <span class="hotspot__tooltip-title">[04 OUTSOLE TREAD]</span>
+                <span class="hotspot__tooltip-desc">Biomimetic Directional Siping</span>
+              </div>
+            </div>
+
+            <!-- Hotspot 5 -->
+            <div class="hotspot" style="top:38%; right:24%;">
+              <button class="hotspot__btn" aria-label="Engraving" type="button">
+                <span class="hotspot__dot" style="background:var(--secondary-fixed-dim);"></span>
+              </button>
+              <div class="hotspot__tooltip hotspot__tooltip--left">
+                <span class="hotspot__tooltip-title" style="color:var(--on-secondary-fixed-variant);">[05 CUSTOM ENGRAVING]</span>
+                <span class="hotspot__tooltip-desc">Sub-surface Laser Etch // Serial ID</span>
+              </div>
+            </div>
+
+            <!-- HUD -->
+            <div class="canvas-hud">
+              <div class="canvas-hud__pill">
+                <span class="material-symbols-outlined">view_in_ar</span>
+                <span>RENDER: FULL ORBITAL CAD</span>
+              </div>
+              <div class="canvas-hud__pill">
+                <span>LATITUDE: 45.4642° N</span>
+                <span class="canvas-hud__dot"></span>
+                <span>WIND-TUNNEL CERTIFIED</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Metric strip -->
+          <div class="metric-strip">
+            <div class="metric-card">
+              <span class="metric-card__label">Torsional Rigidity</span>
+              <span class="metric-card__value">34.8 Nm/°</span>
+              <div class="metric-card__bar"><div class="metric-card__fill metric-card__fill--primary" style="width:82%;"></div></div>
+            </div>
+            <div class="metric-card">
+              <span class="metric-card__label">Energy Return</span>
+              <span class="metric-card__value">89.4%</span>
+              <div class="metric-card__bar"><div class="metric-card__fill metric-card__fill--secondary" style="width:94%;"></div></div>
+            </div>
+            <div class="metric-card">
+              <span class="metric-card__label">Aerodynamic Drag</span>
+              <span class="metric-card__value">0.082 Cd</span>
+              <div class="metric-card__bar"><div class="metric-card__fill metric-card__fill--primary" style="width:76%;"></div></div>
+            </div>
+            <div class="metric-card">
+              <span class="metric-card__label">Carbon Trace</span>
+              <span class="metric-card__value">-42% Net</span>
+              <div class="metric-card__bar"><div class="metric-card__fill metric-card__fill--tertiary" style="width:88%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Config panel -->
+        <div class="workbench__side">
+          <div class="config-header">
+            <div class="config-header__title">
+              <span class="config-header__eyebrow">Spec Station 01</span>
+              <h2>Configure Model</h2>
+            </div>
+            <span class="config-header__badge">1-OF-1 BESPOKE</span>
+          </div>
+
+          <!-- Step 1: Silhouette -->
+          <div class="config-step">
+            <label class="config-step__label">Step 01 // Silhouette Base</label>
+            <div class="silhouette-group" id="silhouette-group">
+              <button class="silhouette-btn is-active" data-price="360" data-silhouette="apex" type="button">
+                <span class="silhouette-btn__name">APEX</span>
+                <span class="silhouette-btn__sub">Track &amp; Sprint</span>
+              </button>
+              <button class="silhouette-btn" data-price="380" data-silhouette="kinetic" type="button">
+                <span class="silhouette-btn__name">KINETIC</span>
+                <span class="silhouette-btn__sub">Haute Road</span>
+              </button>
+              <button class="silhouette-btn" data-price="410" data-silhouette="cloud" type="button">
+                <span class="silhouette-btn__name">CLOUD</span>
+                <span class="silhouette-btn__sub">High Impact</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 2: Material -->
+          <div class="config-step">
+            <div class="config-step__row">
+              <label class="config-step__label">Step 02 // Primary Structural Material</label>
+              <span class="material-choice__price material-choice__price--accent" id="selected-mat-fee">+$0</span>
+            </div>
+            <div class="material-group" id="material-group">
+              <label class="material-choice is-active">
+                <div class="material-choice__left">
+                  <input type="radio" name="material" value="titanium-knit" data-extra="0" checked>
+                  <div class="material-choice__text">
+                    <span class="material-choice__name">Aero-Knit Titanium Mono-mesh</span>
+                    <span class="material-choice__desc">Ultralight breathable weave</span>
+                  </div>
+                </div>
+                <span class="material-choice__price">Standard</span>
+              </label>
+              <label class="material-choice">
+                <div class="material-choice__left">
+                  <input type="radio" name="material" value="bio-leather" data-extra="30">
+                  <div class="material-choice__text">
+                    <span class="material-choice__name">Italian Lab-Grown Bio-Leather</span>
+                    <span class="material-choice__desc">Supple, hydrophobic luxury grade</span>
+                  </div>
+                </div>
+                <span class="material-choice__price material-choice__price--accent">+$30</span>
+              </label>
+              <label class="material-choice">
+                <div class="material-choice__left">
+                  <input type="radio" name="material" value="ripstop-kevlar" data-extra="45">
+                  <div class="material-choice__text">
+                    <span class="material-choice__name">High-Modulus Ripstop Kevlar</span>
+                    <span class="material-choice__desc">Ballistic tear resistance</span>
+                  </div>
+                </div>
+                <span class="material-choice__price material-choice__price--accent">+$45</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 3: Colorway -->
+          <div class="config-step">
+            <div class="config-step__row">
+              <label class="config-step__label">Step 03 // Kinetic Colorway</label>
+              <span class="color-swatches__name" id="active-color-name">Cobalt Velocity</span>
+            </div>
+            <div class="color-swatches" id="palette-group">
+              <button class="swatch swatch--primary is-active" data-color="Cobalt Velocity" title="Cobalt Velocity" type="button"></button>
+              <button class="swatch swatch--secondary" data-color="Electric Coral / Volt" title="Electric Coral / Volt" type="button"></button>
+              <button class="swatch swatch--white" data-color="Pure Titanium White" title="Pure Titanium" type="button"></button>
+              <button class="swatch swatch--dark" data-color="Phantom Obsidian" title="Phantom Obsidian" type="button"></button>
+              <button class="swatch swatch--gold" data-color="Champagne Gold Atelier" title="Champagne Gold" type="button"></button>
+            </div>
+          </div>
+
+          <!-- Step 4: Engraving -->
+          <div class="config-step">
+            <label class="config-step__label">Step 04 // Laser Shank Monogram</label>
+            <div class="engrave-wrap">
+              <input class="engrave-input" id="engrave-input" type="text" maxlength="10" placeholder="e.g. VTR-770" value="VTR-99">
+              <span class="engrave-hint">MAX 10 CHARS</span>
+            </div>
+            <span class="config-step__note">Laser etched directly into the bottom recycled carbon shank plate.</span>
+          </div>
+
+          <!-- Price breakdown -->
+          <div class="price-breakdown">
+            <div class="price-row">
+              <span>Base Platform Chassis</span>
+              <span id="price-base">$360 USD</span>
+            </div>
+            <div class="price-row">
+              <span>Material &amp; Laser Calibration</span>
+              <span id="price-material">+$0 USD</span>
+            </div>
+            <div class="price-divider"></div>
+            <div class="price-row price-row--total">
+              <span>Total Bespoke Price</span>
+              <span class="price-value" id="price-total">$360 USD</span>
+            </div>
+            <div class="price-eta">
+              <span class="material-symbols-outlined" style="font-size:1rem;">schedule</span>
+              <span>Estimated fabrication &amp; wind-tunnel balance: 14 business days</span>
+            </div>
+          </div>
+
+          <button class="btn--cta" id="lock-spec-btn" type="button">
+            <span>Lock In Specification &amp; Order Prototype</span>
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COMMUNITY SECTION ================= -->
+    <section class="community-section">
+      <div class="community-header">
+        <div class="community-header__text">
+          <div class="community-eyebrow">
+            <span class="dot dot--pulse" style="width:0.5rem;height:0.5rem;background:var(--secondary-container);"></span>
+            <span>Field Verification Matrix</span>
+          </div>
+          <h2 class="community-title">Community Street Diary // Worn on the Concrete</h2>
+          <p class="community-desc">
+            Real-world styling and track tests captured by our global collective of athletes, architects, and industrial visionaries across 18 timezones.
+          </p>
+        </div>
+
+        <div class="filter-pills">
+          <button class="pill is-active" type="button">All Dispatches</button>
+          <button class="pill" type="button">Run &amp; Sprint</button>
+          <button class="pill" type="button">Atelier Styling</button>
+          <button class="pill" type="button">Track Telemetry</button>
+        </div>
+      </div>
+
+      <div class="community-grid">
+        <!-- Card 1 -->
+        <article class="community-card">
+          <div class="community-card__media">
+            <img class="community-card__img" alt="Tokyo Movement Style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlxKyVG4fd8fStD6KHNWNFSLVVkXoFushzcFHnLRwXUO-0lnMkGxIVSM9YQKHm2yf63MGxGlS4p28Ibz8TOLhcvunw0jj2Z1a_Fq2Oi2qRV07V3IwOB5oKzhgMJxDJFBGFLFe7rg5FN1uDRvcaoTx9tOrfKz6jaagVvB7UL2P5mQGdMY41pv-rdiDXx5NNUuiPWM9yDSBftocs3_O6ZWTMZQ80TIwsJ93kArDmSo7v">
+            <span class="community-card__location">Tokyo, Japan // 35.6764° N</span>
+            <span class="community-card__likes">
+              <span class="material-symbols-outlined">favorite</span>
+              1,420
+            </span>
+          </div>
+          <div class="community-card__body">
+            <div class="community-card__head">
+              <span class="community-card__user">@kenji_movement</span>
+              <span class="community-card__tag community-card__tag--primary">APEX 01 CUSTOM</span>
+            </div>
+            <p class="community-card__text">"Subtle architectural volume paired with wide-leg wool. The carbon plate turns Tokyo crosswalks into a frictionless runway."</p>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="community-card">
+          <div class="community-card__media">
+            <img class="community-card__img" alt="Milan Street Snapshot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEL1jDl_xNtOHk-1velsASPoIGC43LulIBjYmYOm_L_hJjG5hI4T5NTpd6S0Mv6aTz5QHgyv9P_QZ5VXrRxYr__6HNfv8pLSJB9WTL2DXo5cfqfFs7DSdIX41AkCleFaDA3UBJ3jvzfLr7wwHAcFRctRK_wBvOMRmZQNAscEAivFTL5vBrr3ritzB4zPrXyDbeaeai0eIUUwMjBua24Tgd7LgTfxD9leiq_UA4UqOt">
+            <span class="community-card__location">Milan, Italy // MFW 2025</span>
+            <span class="community-card__likes">
+              <span class="material-symbols-outlined">favorite</span>
+              2,890
+            </span>
+          </div>
+          <div class="community-card__body">
+            <div class="community-card__head">
+              <span class="community-card__user">@clara_atelier</span>
+              <span class="community-card__tag community-card__tag--tertiary">MONOLITH GOLD</span>
+            </div>
+            <p class="community-card__text">"No heavy branding, purely biomechanical form. The titanium weave catches the Milanese autumn sunlight like liquid sculpture."</p>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="community-card">
+          <div class="community-card__media">
+            <img class="community-card__img" alt="Berlin Track Telemetry" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIqgf1u29fAYpBqIWcWA0b2HZjcVZRBBsyEBYropHjmdHlfBPriFvSKNjoIocynwV87sjCMuYpuqwkGBkKVXqfRbIOwl2BX7blp7dODiUcvU-uuj3HBH18TdrZcm5DcWTUC-DHuIfcvyx1GOApUQCw0Tjl-tcEgmxQgDhB3JWL05n5TjtbPcQUzCEMYpET0zmdJSgnjYwTPQtwW727HZGLxYfe8AcPlDo8ueK1rm8Q">
+            <span class="community-card__location">Berlin // 400M Telemetry Test</span>
+            <span class="community-card__likes">
+              <span class="material-symbols-outlined">favorite</span>
+              984
+            </span>
+          </div>
+          <div class="community-card__body">
+            <div class="community-card__head">
+              <span class="community-card__user">@marcus_speed</span>
+              <span class="community-card__tag community-card__tag--secondary">F1 PROTO DROP</span>
+            </div>
+            <p class="community-card__text">"0.21s faster on the bend. The dual carbon flex gives immediate rebound off the tartan without lateral slippage."</p>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="community-card">
+          <div class="community-card__media">
+            <img class="community-card__img" alt="Maya Hoops Locker Room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB68Vui1E3POx1BhJJXG-izJPU0vQfAEPnGmFHws3zKsXjK6g5hBG6h_WxBya4mJrhQpq5oDAncuiWDz40OY83b29MPK9syTXQ10vDD8NqmOIAwbzaaCRraWHox20b1lj5Jnm7EpOS7e5ng_3G_CqjeOXXkik4C_BOxUrWMu9Hmv0dieV-ImxrucD9EJqq4waCDafOaU2ZZhcdPAXHwjPSoM0XuH8RtG_vq2Qel9TUR">
+            <span class="community-card__location">New York // Barclays Tunnel</span>
+            <span class="community-card__likes">
+              <span class="material-symbols-outlined">favorite</span>
+              4,120
+            </span>
+          </div>
+          <div class="community-card__body">
+            <div class="community-card__head">
+              <span class="community-card__user">@maya_hoops</span>
+              <span class="community-card__tag community-card__tag--secondary">WNBA HYPER-HIGH</span>
+            </div>
+            <p class="community-card__text">"Locked in lateral defense all 4 quarters. The ankle collar feels like bespoke orthotics wrapped in haute couture."</p>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="community-card">
+          <div class="community-card__media">
+            <img class="community-card__img" alt="Studio Forma Lab Setup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlhhi8IsCg5nG16-5v8_SWf6yZhBq09oy3ebsgWSh6cnVdZ96pNSJAhH9cFC2UX7sxhZhGv9WyLlDVgLcJyXVL0fxwtxpiwoj0Kl5eXwES7lFyhNvUxYzY1N6KKuFT5k4lMjg0yD15piydQiu2HICcwSom2xZpKqikeI2Yn00VkGYXKgNHujl1khBQB16Dtl3QJlRQUIfDKFUGpkN8xJS8BsmiLIj7P2uuCntpGieo">
+            <span class="community-card__location">Copenhagen // Studio Forma</span>
+            <span class="community-card__likes">
+              <span class="material-symbols-outlined">favorite</span>
+              876
+            </span>
+          </div>
+          <div class="community-card__body">
+            <div class="community-card__head">
+              <span class="community-card__user">@studio_forma</span>
+              <span class="community-card__tag community-card__tag--primary">CLOUD-DRIVE BESPOKE</span>
+            </div>
+            <p class="community-card__text">"14-hour design charrettes on hard concrete floors. Nothing balances skeletal pressure like the nitrogen foam pod array."</p>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="community-card">
+          <div class="community-card__media">
+            <img class="community-card__img" alt="London Night Run" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxs4ZGUxa_exUDfKRU-SvRXz1uLjo83BGXft7fbnAJXkY1_KhQHP540CHsIuk-CGFAI3YeMaUosWZ6Mi1Zk35fRcf0JVswXOM7jvHndV0Q1QyoM9CE4tAh7LV-LGDmNJkFwOsS5lum_cXJ9BkZvMWO88R5f8dWABQYfEDwgdCLaeNsvfJCsGOxPQXQKG0z1MKKtAA4tzhlGU1MOktoQxM8I_jla7cEAwME1I-0EwaX">
+            <span class="community-card__location">London // Thames Midnight Run</span>
+            <span class="community-card__likes">
+              <span class="material-symbols-outlined">favorite</span>
+              1,740
+            </span>
+          </div>
+          <div class="community-card__body">
+            <div class="community-card__head">
+              <span class="community-card__user">@london_runclub</span>
+              <span class="community-card__tag community-card__tag--secondary">KINETIC 3M SPECS</span>
+            </div>
+            <p class="community-card__text">"The retro-reflective yarn cuts through London fog like stadium floodlights. High velocity in low light."</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Upload banner -->
+      <div class="upload-banner">
+        <div class="upload-banner__left">
+          <div class="upload-banner__icon">
+            <span class="material-symbols-outlined">add_photo_alternate</span>
+          </div>
+          <div>
+            <span class="upload-banner__title">Submit Your Street Spec // Tag #VolterraCollective</span>
+            <p class="upload-banner__desc">Featured entries receive private access passes to confidential Lab drops and testing credits.</p>
+          </div>
+        </div>
+        <div class="upload-banner__actions">
+          <button class="btn btn--ghost" type="button">Upload Visual Telemetry</button>
+          <button class="btn btn--primary" type="button">View Instagram Live Feed</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= VIP ALLOCATION PORTAL ================= -->
+    <section class="vip-section">
+      <div class="vip-panel">
+        <div class="vip-panel__glow-a"></div>
+        <div class="vip-panel__glow-b"></div>
+
+        <div class="vip-grid">
+          <!-- Left: value prop -->
+          <div class="vip-content">
+            <div class="vip-badge">
+              <span class="material-symbols-outlined" style="font-size:0.875rem;">verified</span>
+              <span>RESTRICTED ACCESS PROTOCOL // LEVEL 01</span>
+            </div>
+            <h2 class="vip-title">Gain Tier-1 Allocation // The Inner Circle</h2>
+            <p class="vip-desc">
+              Global drops are capped at 300 numbered pairs per run. Registered Tier-1 members receive prioritized algorithmic queueing, early laboratory previews, and exclusive bespoke consultation.
+            </p>
+
+            <div class="perks-grid">
+              <div class="perk"><span class="material-symbols-outlined">bolt</span><span>30-Minute Priority Window</span></div>
+              <div class="perk"><span class="material-symbols-outlined">science</span><span>Invite-Only Lab Prototypes</span></div>
+              <div class="perk"><span class="material-symbols-outlined">diamond</span><span>Direct Atelier Craft Master Access</span></div>
+              <div class="perk"><span class="material-symbols-outlined">flight_takeoff</span><span>Global White-Glove Hand Courier</span></div>
+            </div>
+          </div>
+
+          <!-- Right: form -->
+          <div class="vip-form-card">
+            <div class="vip-form-card__head">
+              <span class="vip-form-card__eyebrow">Biometric Credentials</span>
+              <span class="vip-form-card__title">Reserve Your Queue Spot</span>
+            </div>
+
+            <form class="vip-form" id="vip-form">
+              <div class="form-field">
+                <label class="form-label" for="vip-email">Authorized Electronic Mail</label>
+                <input class="form-input" id="vip-email" type="email" placeholder="velocity.director@aerodynamics.org" required>
+              </div>
+
+              <div class="form-field">
+                <label class="form-label">Biomechanical Footwear Size (US Men / Women)</label>
+                <select class="form-select">
+                  <option value="US M 8.0 / W 9.5">US M 8.0 / W 9.5 (EU 41)</option>
+                  <option value="US M 8.5 / W 10.0">US M 8.5 / W 10.0 (EU 42)</option>
+                  <option value="US M 9.0 / W 10.5">US M 9.0 / W 10.5 (EU 42.5)</option>
+                  <option value="US M 9.5 / W 11.0">US M 9.5 / W 11.0 (EU 43)</option>
+                  <option value="US M 10.0 / W 11.5" selected>US M 10.0 / W 11.5 (EU 44)</option>
+                  <option value="US M 10.5 / W 12.0">US M 10.5 / W 12.0 (EU 44.5)</option>
+                  <option value="US M 11.0 / W 12.5">US M 11.0 / W 12.5 (EU 45)</option>
+                  <option value="US M 12.0 / W 13.5">US M 12.0 / W 13.5 (EU 46)</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label class="form-label">Primary Division Allocation</label>
+                <div class="radio-grid">
+                  <label class="radio-tile">
+                    <input type="radio" name="allocation_type" checked>
+                    <span>Track &amp; F1 Speed</span>
+                  </label>
+                  <label class="radio-tile">
+                    <input type="radio" name="allocation_type">
+                    <span>WNBA &amp; Court</span>
+                  </label>
+                </div>
+              </div>
+
+              <button class="btn btn--secondary btn--full" type="submit">
+                <span>Request VIP Access &amp; Sync ID</span>
+                <span class="material-symbols-outlined" style="font-size:0.875rem;">lock_open</span>
+              </button>
+              <p class="vip-form__note">Encrypted biometric hashing. Strictly zero secondary reselling.</p>
+            </form>
+
+            <div class="vip-success" id="vip-success">
+              <span class="material-symbols-outlined">verified</span>
+              <span class="vip-success__title">VIP ID Authenticated</span>
+              <p class="vip-success__desc">Telemetry pass allocated: #VOL-8924. Your prioritized drop reservation link has been transmitted.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand__logo">
+            <img alt="VOLTERRA Brand Logo" src="https://lh3.googleusercontent.com/aida/AEtjO1VIN3rPA1xVodkWcZBgzGqXXe_RcA6kUp1zK5IvXTGgKv7b9mxUpoocX6okNmCgNiwHRs2uXPsesjHcTjkqWfZN1W0CmqsxSRQOiE6qNFxkHcW6I8_-wxk6LS0AHjond8GiGXLTEME4liWVdspV5jeoCq4MuiW8ISibHGfF_g1ky4i6IKldoYjn_3jexslSN5UlzP8yXJC_VDP7HVaOGWj87s8ZdyOWJQenA2u-itSwCg">
+            <span class="footer-brand__name">VOLTERRA</span>
+          </div>
+          <p class="footer-brand__desc">Haute athletics forged through aerodynamic computational engineering and biomechanical propulsion matrices. Certified for high velocity.</p>
+          <div class="footer-tags">
+            <span class="footer-tag">100% RECYCLED CARBON PLATE</span>
+            <span class="footer-tag">BIO-LEATHER</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col__title">Platform Architecture</span>
+          <nav class="footer-links">
+            <a class="footer-link" href="#">Home Index</a>
+            <a class="footer-link" href="#">All Releases</a>
+            <a class="footer-link" href="#">WNBA &amp; F1 Editions</a>
+            <a class="footer-link" href="#">Volterra Prototyping</a>
+            <a class="footer-link" href="#">Biomechanics Team</a>
+          </nav>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col__title">Kinetic Manifesto</span>
+          <ul class="footer-links footer-list">
+            <li>Nitrogen Infusion V.3</li>
+            <li>Torsional Spring Matrix</li>
+            <li>Wind-Tunnel Drag 0.08</li>
+            <li>Anisotropic Fiber Insets</li>
+            <li>Aero-Grip Polymers</li>
+          </ul>
+        </div>
+
+        <div class="footer-subscribe">
+          <div>
+            <span class="subscribe-title">Telemetry &amp; Priority Drops</span>
+            <p class="subscribe-desc">Receive hyper-limited prototype reservation access and wind-tunnel telemetry briefings.</p>
+          </div>
+          <form class="subscribe-form">
+            <input class="subscribe-input" type="email" placeholder="athlete@velocity.domain">
+            <button class="btn btn--primary" type="button">Reserve</button>
+          </form>
+          <span class="subscribe-note">Encrypted SSL. Unsubscribe at any time. Instant allocation queue.</span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2025 VOLTERRA KINETICS INC. ALL BIOMECHANICAL SPECIFICATIONS REGISTERED.</div>
+        <div class="footer-legal">
+          <a href="#">Privacy Standard</a>
+          <a href="#">Terms of Kinetic Delivery</a>
+          <a href="#">Patents &amp; IP</a>
+          <a href="#">Sustainability Report</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= INTERACTIVITY ================= -->
+  <script>
+    (function () {
+      var currentBasePrice = 360;
+      var currentMaterialExtra = 0;
+
+      var silhouetteButtons = document.querySelectorAll('.silhouette-btn');
+      var materialRadios = document.querySelectorAll('input[name="material"]');
+      var swatches = document.querySelectorAll('.swatch');
+      var colorNameEl = document.getElementById('active-color-name');
+      var weightEl = document.getElementById('telemetry-weight');
+      var propEl = document.getElementById('telemetry-propulsion');
+
+      var priceBaseEl = document.getElementById('price-base');
+      var priceMaterialEl = document.getElementById('price-material');
+      var priceTotalEl = document.getElementById('price-total');
+      var matFeeEl = document.getElementById('selected-mat-fee');
+
+      function updatePricing() {
+        var total = currentBasePrice + currentMaterialExtra;
+        if (priceBaseEl) priceBaseEl.textContent = '$' + currentBasePrice + ' USD';
+        if (priceMaterialEl) priceMaterialEl.textContent = '+$' + currentMaterialExtra + ' USD';
+        if (priceTotalEl) priceTotalEl.textContent = '$' + total + ' USD';
+        if (matFeeEl) matFeeEl.textContent = '+$' + currentMaterialExtra;
+      }
+
+      // Silhouette selection
+      silhouetteButtons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          silhouetteButtons.forEach(function (b) { b.classList.remove('is-active'); });
+          btn.classList.add('is-active');
+
+          currentBasePrice = parseInt(btn.getAttribute('data-price') || '360', 10);
+          var sil = btn.getAttribute('data-silhouette');
+
+          if (sil === 'apex') {
+            if (weightEl) weightEl.textContent = '184.2 g';
+            if (propEl) propEl.textContent = '98.4 %';
+          } else if (sil === 'kinetic') {
+            if (weightEl) weightEl.textContent = '198.0 g';
+            if (propEl) propEl.textContent = '94.2 %';
+          } else {
+            if (weightEl) weightEl.textContent = '212.5 g';
+            if (propEl) propEl.textContent = '91.8 %';
+          }
+          updatePricing();
+        });
+      });
+
+      // Material selection
+      materialRadios.forEach(function (radio) {
+        radio.addEventListener('change', function (e) {
+          var extra = parseInt(e.target.getAttribute('data-extra') || '0', 10);
+          currentMaterialExtra = extra;
+
+          document.querySelectorAll('.material-choice').forEach(function (c) { c.classList.remove('is-active'); });
+          var parent = e.target.closest('.material-choice');
+          if (parent) parent.classList.add('is-active');
+
+          updatePricing();
+        });
+      });
+
+      // Swatches
+      swatches.forEach(function (s) {
+        s.addEventListener('click', function () {
+          swatches.forEach(function (x) { x.classList.remove('is-active'); });
+          s.classList.add('is-active');
+          if (colorNameEl) colorNameEl.textContent = s.getAttribute('data-color');
+        });
+      });
+
+      // Lock spec button
+      var lockBtn = document.getElementById('lock-spec-btn');
+      var engraveInput = document.getElementById('engrave-input');
+      if (lockBtn) {
+        lockBtn.addEventListener('click', function () {
+          var monogram = (engraveInput && engraveInput.value) || 'VTR';
+          var originalHTML = lockBtn.innerHTML;
+          lockBtn.innerHTML = '<span>SPEC #' + monogram + ' SECURED // PROCEEDING TO RUNWAY</span><span class="material-symbols-outlined">check_circle</span>';
+          lockBtn.style.background = 'var(--secondary-container)';
+          setTimeout(function () {
+            lockBtn.innerHTML = originalHTML;
+            lockBtn.style.background = '';
+          }, 3500);
+        });
+      }
+
+      // VIP form submit
+      var vipForm = document.getElementById('vip-form');
+      var vipSuccess = document.getElementById('vip-success');
+      if (vipForm && vipSuccess) {
+        vipForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+          vipSuccess.classList.add('is-visible');
+          vipForm.style.display = 'none';
+        });
+      }
+    })();
+  </script>
+
+</body>
+</html>
